@@ -8,16 +8,64 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__container"></div>
-    </div>
-  </header>
+  <header class="header"></header>
 
   <main class="main">
     <section class="hero">
       <div class="container">
-        <div class="hero__container"></div>
+        <h2 class="text-center fw-bold my-5">Movies catalog</h2>
+
+        <div class="row">
+          <div class="col-4">
+            <form action="https://echo.htmlacademy.ru/" method="post" class="mb-5 px-3 border-1">
+              <label for="input1" class="w-100">
+                <input type="text" class="form-control" placeholder="ave" id="input1">
+              </label>
+
+              <label for="input2" class="w-100">
+                <input type="text" class="form-control my-4" placeholder="5" id="input2">
+              </label>
+
+              <select class="form-select my-1" aria-placeholder="All">
+                <option selected>All</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+
+              <select class="form-select my-3" aria-label="Default select example">
+                <option selected>Rating (high to low)</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+
+              <button type="submit" class="btn bg-primary text-white w-100 p-2">Search</button>
+            </form>
+
+            <div>
+              <h2 class="fw-bold mx-3">Bookmarked movies</h2>
+
+              <div class="border p-4">
+                <h4 class="mx-1 mb-3">Avengers:Infinity War</h4>
+
+                <button class="btn bg-danger text-white rounded-1 p-2 mx-1">Remove</button>
+              </div>
+              <div class="border p-4">
+                <h4 class="mx-1 mb-3">The Avengers</h4>
+
+                <button class="btn bg-danger text-white rounded-1 p-2 mx-1">Remove</button>
+              </div>
+              <div class="border p-4">
+                <h4 class="mx-1 mb-3">12 Years a Slave</h4>
+
+                <button class="btn bg-danger text-white rounded-1 p-2 mx-1">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
