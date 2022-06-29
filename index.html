@@ -13,11 +13,11 @@
   <main class="main">
     <section class="hero">
       <div class="container">
-        <h2 class="text-center fw-bold my-5">Movies catalog</h2>
+        <h2 class="text-center fw-bold my-2 mb-5">Movies catalog</h2>
 
         <div class="row">
           <div class="col-4">
-            <form action="https://echo.htmlacademy.ru/" method="post" class="mb-5 px-3 border-1">
+            <form action="https://echo.htmlacademy.ru/" method="post" class="mb-3 px-3 border-1">
               <label for="input1" class="w-100">
                 <input type="text" class="form-control" placeholder="ave" id="input1">
               </label>
@@ -26,7 +26,7 @@
                 <input type="text" class="form-control my-4" placeholder="5" id="input2">
               </label>
 
-              <select class="form-select my-1" aria-placeholder="All">
+              <select class="form-select my-1" aria-label="Default select example">
                 <option selected>All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -48,20 +48,77 @@
             <div>
               <h2 class="fw-bold mx-3">Bookmarked movies</h2>
 
-              <div class="border p-4">
-                <h4 class="mx-1 mb-3">Avengers:Infinity War</h4>
+              <div class="border p-3">
+                <h4 class="mx-1 mb-2">Avengers:Infinity War</h4>
 
-                <button class="btn bg-danger text-white rounded-1 p-2 mx-1">Remove</button>
+                <button class="btn bg-danger text-white rounded-1 pe-2 ps-2 mx-1">Remove</button>
               </div>
-              <div class="border p-4">
-                <h4 class="mx-1 mb-3">The Avengers</h4>
+              <div class="border p-3">
+                <h4 class="mx-1 mb-2">The Avengers</h4>
 
-                <button class="btn bg-danger text-white rounded-1 p-2 mx-1">Remove</button>
+                <button class="btn bg-danger text-white rounded-1 pe-2 ps-2 mx-1">Remove</button>
               </div>
-              <div class="border p-4">
-                <h4 class="mx-1 mb-3">12 Years a Slave</h4>
+              <div class="border p-3">
+                <h4 class="mx-1 mb-2">12 Years a Slave</h4>
 
-                <button class="btn bg-danger text-white rounded-1 p-2 mx-1">Remove</button>
+                <button class="btn bg-danger text-white rounded-1 pe-2 ps-2 mx-1">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <h3 class="fw-bold h4">Search results: 39</h3>
+
+            <div class="alert alert-success">Use the form on the leftto search for a movie</div>
+
+            <div class="row mb-5">
+              <div class="col-6">
+                <div class="m-1">
+                  <div class="card">
+                    <img src="./images/trailer.jpg" class="card-img-top mb-1" alt="trailer-img">
+                    <div class="card-body p-3">
+                      <h5 class="card-title">Avengers: Infinity War</h5>
+                      <p class="card-text h5 mb-2"><img class="me-2" src="./images/calendar.svg" alt="calendar" width="35" height="35">2018</p>
+
+                      <p class="card-text mb-3"><img class="me-2" src="./images/star.svg" alt="star">8.7</p>
+
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-outline-primary p-2">Watch trailer</button>
+                        <button class="btn btn-outline-info p-2">More info</button>
+                        <button class="btn btn-outline-success p-2">Bookmark</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="m-1">
+                  <div class="card">
+                    <img src="./images/iraonman.jpg" class="card-img-top mb-1" alt="ironman">
+                    <div class="card-body p-3">
+                      <h5 class="card-title">The Avengers</h5>
+                      <p class="card-text h5 mb-2"><img class="me-2" src="./images/calendar.svg" alt="calendar" width="35" height="35">2018</p>
+
+                      <p class="card-text mb-3"><img class="me-2" src="./images/star.svg" alt="star">8.1</p>
+
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-outline-primary">Watch trailer</button>
+                        <button class="btn btn-outline-info">More info</button>
+                        <button class="btn btn-outline-success">Bookmark</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-toolbar d-flex align-items-center flex-column" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-primary">1</button>
+                <button type="button" class="btn btn-outline-primary">2</button>
+                <button type="button" class="btn btn-outline-primary">3</button>
+                <button type="button" class="btn btn-outline-primary">4</button>
               </div>
             </div>
           </div>
